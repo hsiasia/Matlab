@@ -1,0 +1,1 @@
+fprintf('get flag : %s\n',get_flag(100,"sum"));

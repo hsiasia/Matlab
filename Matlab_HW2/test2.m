@@ -1,0 +1,14 @@
+x=(0:0.1:10);
+x1=exp(-0.5.*x).*sin(2.*x);
+y1=exp(-0.5.*x).*cos(2.*x);
+subplot(3,1,1);
+    plot(x,x1,'r','linewidth', 2);
+    title('exp(-0.5.*x).*sin(2.*x):');
+subplot(3,1,2);
+    plot(x,y1,'b--','linewidth', 3);
+    title('exp(-0.5.*x).*cos(2.*x):');
+subplot(3,1,3);
+    p = plot(x,x1,'r',x,y1,'b--');
+    title('combination:');
+    p(1).LineWidth = 2;
+    p(2).LineWidth = 3;

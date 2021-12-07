@@ -1,0 +1,11 @@
+arrTmp=[2,5,10,11,12,17;
+        1,4,9,15,13,19;
+        7,3,6,14,18,16];
+array1=arrTmp(2,:);
+array2=arrTmp(:,[1 3 5]);
+array3=arrTmp(1:2:3,[3 3 4]);
+array4=arrTmp([1 1],:);
+disp(num2str(array1));
+disp(num2str(array2));
+disp(num2str(array3));
+disp(num2str(array4));
